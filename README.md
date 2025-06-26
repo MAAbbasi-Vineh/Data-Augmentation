@@ -14,4 +14,32 @@ In addition, a k-mer-based data augmentation strategy also offered a robust solu
 
 The current introduced innovative approaches enable the applicability of deep learning and machine learning to omics datasets with limited data availability. This provides new opportunities for researchers working with underrepresented biological data.
 
+# Authors
+
+
+# Requirements_and_Installation
+
+
+# Availability of the code
+
+# Code for applying data augmentation for deep learning model inputs
+
+
+# Training the CNN-LSTM hybrid model
+
+
+# The flexibility of these user-friendly approaches
+
+
+
+# An example of easily adjusting based on the specific characteristics of different datasets
+
+
+# Code for applying data augmentation strategy for unsupervised analysis
+
+
+# Citations
+If you use these data augmentation approaches in your research, please cite our paper:
+
+# Contact for providing more details
 
