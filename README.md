@@ -20,7 +20,7 @@ The current introduced innovative approaches enable the applicability of deep le
 This section will be completed later.
 
 
-# Requirements_and_Installation
+# Requirements and Installation
 
 All analyses were conducted using the free version of Google Colaboratory (Google Colab), an online platform that offers cloud-based access to a shared computing environment. Alternatively, analyses can be performed on other online platforms such as Kaggle or in offline Python-based environments. All necessary dependencies and packages are specified in the code and can be easily installed.
 
@@ -37,6 +37,8 @@ The code for the various sections of this study is available in the file titled 
 **Code for applying data augmentation strategy for unsupervised analysis
 **
 
+**Code for applying data augmentation strategy for unsupervised analysis
+**
 **Additional utilities and helper functions**
 
 These annotations and modular sections are intended to help users quickly identify and adapt relevant parts of the code for their own applications.
@@ -48,7 +50,7 @@ The current user-friendly augmentation process is highly adaptable, enabling res
 # An example of easily adjusting based on the specific characteristics of different datasets
 
 
-Code for applying data augmentation strategy for unsupervised analysis
+
 
 
 # Citations
