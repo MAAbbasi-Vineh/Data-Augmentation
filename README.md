@@ -62,4 +62,5 @@ If you use these data augmentation approaches in your research, please cite our 
 This section will be completed later.
 
 # Contact for providing more details
+For more information or assistance with using or running the codes employed in this study, please feel free to contact us at the following email addresses:
 This section will be completed later.
