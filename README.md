@@ -30,14 +30,19 @@ The code for the various sections of this study is available in the file titled 
  
 **Code for applying data augmentation for deep learning model inputs
 **
+
 **Training the CNN-LSTM hybrid model
 **
+
 **Code for applying data augmentation strategy for unsupervised analysis
 **
+
 **Code for applying data augmentation strategy for unsupervised analysis
 **
+
 **Additional utilities and helper functions
 **
+
 These annotations and modular sections are intended to help users quickly identify and adapt relevant parts of the code for their own applications.
 
 # The flexibility of these user-friendly approaches
