@@ -51,11 +51,11 @@ The current user-friendly augmentation process is highly adaptable, enabling res
 
 # An example of easily adjusting based on the specific characteristics of different datasets
 
-# 1. The example for "Applying data augmentation for deep learning model inputs"
+The example for "Applying data augmentation for deep learning model inputs"
 
 from Bio import SeqIO
 
-# 1. def has_15_consecutive_common(seq1, seq2):
+def has_15_consecutive_common(seq1, seq2):
     """
     Check if two sequences have at least 15 consecutive nucleotides in common.
     """
@@ -64,7 +64,7 @@ from Bio import SeqIO
             return True
     return False
 
-# 1. def generate_sequences_with_variable_overlap_and_common_bases(seq, k=40, min_overlap=5, max_overlap=20): 
+def generate_sequences_with_variable_overlap_and_common_bases(seq, k=40, min_overlap=5, max_overlap=20): 
     """
     Generate all possible k-mers (subsequences) of length `k` (40 nucleotides) from the sequence with:
     1. Overlaps of varying lengths (5-20 nucleotides).
