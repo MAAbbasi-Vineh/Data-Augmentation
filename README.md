@@ -51,12 +51,14 @@ The current user-friendly augmentation process is highly adaptable, enabling res
 
 # An example of easily adjusting based on the specific characteristics of different datasets
 
-Here, consider the example “Applying data augmentation to deep learning model inputs” and refer to the corresponding code, then For adjusting the length of the subsequences, modify the **k=40**, for adjusting the  degree of overlap, change the **min_overlap=5** and **max_overlap=20** in below part and other related parts.
+Here, consider the example “Applying data augmentation to deep learning model inputs” and refer to the corresponding code, then for adjusting the length of the subsequences, modify the **k=40**, for adjusting the degree of overlap, change the **min_overlap=5** and **max_overlap=20** in below part and other related parts.
+
 def generate_sequences_with_variable_overlap_and_common_bases(seq, k=40, min_overlap=5, max_overlap=20): 
 
     
 # Citations
 If you use these data augmentation approaches in your research, please cite our paper:
+
 This section will be completed later.
 
 # Contact for providing more details
