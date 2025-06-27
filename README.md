@@ -51,7 +51,77 @@ The current user-friendly augmentation process is highly adaptable, enabling res
 
 # An example of easily adjusting based on the specific characteristics of different datasets
 
+The example for "Applying data augmentation for deep learning model inputs"
 
+from Bio import SeqIO
+
+def has_15_consecutive_common(seq1, seq2):
+    """
+    Check if two sequences have at least 15 consecutive nucleotides in common.
+    """
+    for i in range(len(seq1) - 14):  # Check for windows of 15 nucleotides
+        if seq1[i:i+15] in seq2:
+            return True
+    return False
+
+def generate_sequences_with_variable_overlap_and_common_bases(seq, k=40, min_overlap=5, max_overlap=20): 
+    """
+    Generate all possible k-mers (subsequences) of length `k` (40 nucleotides) from the sequence with:
+    1. Overlaps of varying lengths (5-20 nucleotides).
+    2. Sequences that share at least 15 consecutive nucleotides with a previously extracted sequence.
+    """
+    valid_sequences = set()  # Use a set to ensure uniqueness
+
+    # 1. Generate subsequences with varying overlaps (5 to 20 nucleotides)
+    for overlap in range(min_overlap, max_overlap + 1):
+        # Left overlap
+        for i in range(0, len(seq) - k + 1, k - overlap):
+            sub_seq = str(seq[i:i + k])
+            valid_sequences.add(sub_seq)
+        # Right overlap
+        for i in range(overlap, len(seq) - k + 1, k - overlap):
+            sub_seq = str(seq[i:i + k])
+            valid_sequences.add(sub_seq)
+        # Both sides overlap
+        for i in range(overlap // 2, len(seq) - k + 1, k - overlap):
+            sub_seq = str(seq[i:i + k])
+            valid_sequences.add(sub_seq)
+
+    # 2. Generate subsequences with at least 15 consecutive nucleotides in common
+    for i in range(len(seq) - k + 1):
+        sub_seq = str(seq[i:i + k])
+        if not valid_sequences:  # If no sequences yet, add the first one
+            valid_sequences.add(sub_seq)
+        else:
+            # Check if the current subsequence has 15 consecutive nucleotides in common with any previously added one
+            if any(has_15_consecutive_common(existing_seq, sub_seq) for existing_seq in valid_sequences):
+                valid_sequences.add(sub_seq)
+
+    return list(valid_sequences)
+
+def process_fasta_for_nn(input_fasta, output_file, k=40, min_overlap=5, max_overlap=20):
+    """
+    Process each sequence in the input FASTA file to generate subsequences with:
+    1. Variable overlaps of 5-20 nucleotides.
+    2. Sequences sharing at least 15 consecutive nucleotides with previous sequences.
+    Ensure that all subsequences are exactly 40 nucleotides long.
+    """
+    with open(output_file, 'w') as output_handle:
+        for record in SeqIO.parse(input_fasta, "fasta"):
+            # Generate subsequences with variable overlap and common bases
+            overlap_sequences = generate_sequences_with_variable_overlap_and_common_bases(record.seq, k, min_overlap, max_overlap)
+
+            # Combine all sequences and ensure uniqueness by using a set
+            all_sequences = set(overlap_sequences)
+
+            label = record.id.split('_')[0]  # Extract label from the header (e.g., "trnR1" from ">trnR1_seq_1")
+            for sub_seq in all_sequences:
+                output_handle.write(f"{sub_seq}, {label}\n")
+
+# Example usage
+input_fasta = "/content/drive/MyDrive/C.... /chloroplast_300 bp up.fasta"
+output_file = "/content/drive/MyDrive/...../chloroplast_300N_40N_5to20_overlap.csv"
+process_fasta_for_nn(input_fasta, output_file)
 
 
 
