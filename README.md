@@ -1,5 +1,6 @@
 # Data-Augmentation
 Code for manuscript titled:
+
 **Innovative** **Data** **Augmentation** **Strategy** **for** **Deep** **Learning** **on** **Biological** **Datasets** **with** **Limited** **Gene** **Representations**
 
 
@@ -16,30 +17,43 @@ The current introduced innovative approaches enable the applicability of deep le
 
 # Authors
 
+This section will be completed later.
+
 
 # Requirements_and_Installation
 
+All analyses were conducted using the free version of Google Colaboratory (Google Colab), an online platform that offers cloud-based access to a shared computing environment. Alternatively, analyses can be performed on other online platforms such as Kaggle or in offline Python-based environments. All necessary dependencies and packages are specified in the code and can be easily installed.
 
 # Availability of the code
 
-# Code for applying data augmentation for deep learning model inputs
+The code for the various sections of this study is available in the file titled "S 3_main scripts.ipynb." To facilitate ease of use and understanding, important sections have been annotated with comments highlighting areas that may require modification. This file includes code for different parts of the analysis, including:
+ 
+**Code for applying data augmentation for deep learning model inputs
+**
 
+**Training the CNN-LSTM hybrid model
+**
 
-# Training the CNN-LSTM hybrid model
+**Code for applying data augmentation strategy for unsupervised analysis
+**
 
+**Additional utilities and helper functions**
+
+These annotations and modular sections are intended to help users quickly identify and adapt relevant parts of the code for their own applications.
 
 # The flexibility of these user-friendly approaches
 
-
+The current user-friendly augmentation process is highly adaptable, enabling researchers to easily modify key parameters such as the length of the subsequences, the degree of overlap, and the total number of generated subsequences, providing flexibility across different types of omics datasets. 
 
 # An example of easily adjusting based on the specific characteristics of different datasets
 
 
-# Code for applying data augmentation strategy for unsupervised analysis
+Code for applying data augmentation strategy for unsupervised analysis
 
 
 # Citations
 If you use these data augmentation approaches in your research, please cite our paper:
+This section will be completed later.
 
 # Contact for providing more details
-
+This section will be completed later.
