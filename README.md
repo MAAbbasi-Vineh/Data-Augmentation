@@ -118,7 +118,7 @@ def process_fasta_for_nn(input_fasta, output_file, k=40, min_overlap=5, max_over
             for sub_seq in all_sequences:
                 output_handle.write(f"{sub_seq}, {label}\n")
 
-# Example usage
+Example usage
 input_fasta = "/content/drive/MyDrive/C.... /chloroplast_300 bp up.fasta"
 output_file = "/content/drive/MyDrive/...../chloroplast_300N_40N_5to20_overlap.csv"
 process_fasta_for_nn(input_fasta, output_file)
