@@ -18,9 +18,13 @@ The current introduced innovative approaches enable the applicability of deep le
 # Authors
 
 Mohammad Ali Abbasi-Vineh(1), Shirin Rouzbahani(1), Kaveh Kavousi(*2), Masoumeh Emadpour(*1,3)
+
 1 Department of Agricultural Biotechnology, Tarbiat Modares University (TMU), 1497713111 Tehran, Iran
+
 2 Department of Bioinformatics, Laboratory of Complex Biological Systems and Bioinformatics (CBB), Institute of Biochemistry and Biophysics (IBB), University of Tehran, Tehran, Iran
+
 3 Plant Physiology, Dahlem Centre of Plant Sciences, Freie Universität Berlin, 14195 Berlin, Germany
+
 * Correspondences: m.emadpour@modares.ac.ir; kkavousi@ut.ac.ir
 
 
