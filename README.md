@@ -1,7 +1,7 @@
 # Data-Augmentation
 Code for manuscript titled:
 
-**Innovative** **Data** **Augmentation** **Strategy** **for** **Deep** **Learning** **on** **Biological** **Datasets** **with** **Limited** **Gene** **Representations**
+Innovative Data Augmentation Strategy for Deep Learning on Biological Datasets with Limited Gene Representations Focused on Chloroplast Genomes
 
 
 # Overview
@@ -17,7 +17,12 @@ The current introduced innovative approaches enable the applicability of deep le
 
 # Authors
 
-This section will be completed later.
+Mohammad Ali Abbasi-Vineh(1), Shirin Rouzbahani(1), Kaveh Kavousi(*2), Masoumeh Emadpour(*1,3)
+1 Department of Agricultural Biotechnology, Tarbiat Modares University (TMU), 1497713111 Tehran, Iran
+2 Department of Bioinformatics, Laboratory of Complex Biological Systems and Bioinformatics (CBB), Institute of Biochemistry and Biophysics (IBB), University of Tehran, Tehran, Iran
+3 Plant Physiology, Dahlem Centre of Plant Sciences, Freie Universität Berlin, 14195 Berlin, Germany
+* Correspondences: m.emadpour@modares.ac.ir; kkavousi@ut.ac.ir
+
 
 
 # Requirements and Installation
@@ -63,4 +68,8 @@ This section will be completed later.
 
 # Contact for providing more details
 For more information or assistance with using or running the codes employed in this study, please feel free to contact us at the following email addresses:
-This section will be completed later.
+
+Mohammad Ali Abbasi-Vineh: ali.abbasi@modares.ac.ir
+Masoumeh Emadpour*: m.emadpour@modares.ac.ir
+Kaveh Kavousi*: kkavousi@ut.ac.ir
+* Correspondences
