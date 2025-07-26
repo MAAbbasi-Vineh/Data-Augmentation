@@ -3,6 +3,8 @@ Code for manuscript titled:
 
 Innovative Data Augmentation Strategy for Deep Learning on Biological Datasets with Limited Gene Representations Focused on Chloroplast Genomes
 
+DOI:
+https://doi.org/10.1038/s41598-025-12796-9
 
 # Overview
 In the current study, a novel and highly effective data augmentation strategy was introduced that addresses the challenges posed by small genomic datasets. This approach enables deep learning applications for omics and other related biological datasets when limited sequence data is available. The method expands the datasets (without introducing noise or overfitting) while preserving the biological integrity of the sequences and ensuring comprehensive coverage of the original sequences. The flexibility of this user-friendly approach, combined with its ability to generate biologically relevant data, makes it applicable to a wide range of biological data repositories. By enabling high-performance deep learning models to capture subtle, biologically relevant patterns in small datasets, the current approach offered a significant advancement in the field of biological data analysis. Another key advantage of the current introduced approach is its user-friendliness, as all its parameters, such as the overlapping length and the length of the generated sequences, can be easily modified. This flexibility makes the method applicable not only to gene or regulatory sequences but also to genomic sequences. As illustrated in the Figure below for ease of understanding, a graphical flowchart summarizes the data augmentation strategy designed to overcome the challenges of limited sequence availability in omics and related biological datasets, thereby facilitating more effective deep learning applications.
@@ -68,7 +70,8 @@ def generate_sequences_with_variable_overlap_and_common_bases(seq, k=40, min_ove
 # Citations
 If you use these data augmentation approaches in your research, please cite our paper:
 
-This section will be completed later.
+
+Abbasi-Vineh, M.A., Rouzbahani, S., Kavousi, K. et al. Innovative data augmentation strategy for deep learning on biological datasets with limited gene representations focused on chloroplast genomes. Sci Rep 15, 27079 (2025). https://doi.org/10.1038/s41598-025-12796-9
 
 # Contact for providing more details
 For more information or assistance with using or running the codes employed in this study, please feel free to contact us at the following email addresses:
